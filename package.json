@@ -1,0 +1,19 @@
+{
+  "name": "@api-weaver/vite-plugin-apiva",
+  "version": "0.0.1",
+  "description": "Api weaver plugin for vite",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Aka-Amir",
+  "license": "MIT",
+  "peerDependencies": {
+    "vite": ">=4.0.0",
+    "@api-weaver/core": ">=0.0.1"
+  },
+  "dependencies": {
+    "@api-weaver/core": "^0.0.1",
+    "vite": "^7.1.5"
+  }
+}
