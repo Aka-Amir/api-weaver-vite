@@ -18,7 +18,13 @@ async function downloadFromUrl(url) {
     const outputPath = (0, path_1.join)(tempDir, "api-spec.json");
     return new Promise((resolve, reject) => {
         const file = (0, fs_1.createWriteStream)(outputPath);
-        (0, https_1.get)(url, (response) => {
+        (0, https_1.get)({
+            path: url,
+            headers: {
+                "User-Agent": "api-weaver/vite-plugin",
+                Accept: "application/json",
+            },
+        }, (response) => {
             response.pipe(file);
             file.on("finish", async () => {
                 file.close();

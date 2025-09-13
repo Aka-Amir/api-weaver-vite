@@ -6,6 +6,11 @@
   "scripts": {
     "build": "tsc"
   },
+  "exports": {
+    "import": "./index.js",
+    "default": "./index.js",
+    "types": "./index.d.ts"
+  },
   "author": "Aka-Amir",
   "license": "MIT",
   "peerDependencies": {
