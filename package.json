@@ -1,8 +1,12 @@
 {
   "name": "@api-weaver/vite-plugin-apiva",
-  "version": "0.0.1",
   "description": "Api weaver plugin for vite",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc"
   },
