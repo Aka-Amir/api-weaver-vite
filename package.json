@@ -3,26 +3,24 @@
   "description": "Api weaver plugin for vite",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "tsc"
   },
-  "exports": {
-    "import": "./index.js",
-    "default": "./index.js",
-    "types": "./index.d.ts"
-  },
   "author": "Aka-Amir",
   "license": "MIT",
   "peerDependencies": {
-    "vite": ">=4.0.0",
-    "@api-weaver/core": ">=0.0.1"
+    "vite": "^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    }
   },
   "dependencies": {
-    "@api-weaver/core": "^0.0.1",
-    "vite": "^7.1.5"
+    "@api-weaver/core": "^0.0.1"
   }
 }

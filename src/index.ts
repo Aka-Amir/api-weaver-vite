@@ -1,4 +1,4 @@
-import type { Plugin } from "vite";
+import { defineConfig, Plugin, PluginOption } from "vite";
 
 import { ApiWeaver } from "@api-weaver/core";
 import { get } from "https";
@@ -62,7 +62,7 @@ export function apiWeaverPlugin(options: ApiWeaverPluginOptions): Plugin {
   return {
     name: "api-weaver-plugin",
     enforce: "pre",
-    async configResolved(config) {
+    configResolved: async (config): Promise<void> => {
       config.logger.info("Configuring API Weaver Plugin...");
       try {
         let apiSpec: Record<string, unknown> | undefined = undefined;
@@ -92,3 +92,7 @@ export function apiWeaverPlugin(options: ApiWeaverPluginOptions): Plugin {
     },
   };
 }
+
+defineConfig({
+  plugins: [apiWeaverPlugin({ outputDir: "", path: "" })],
+});
