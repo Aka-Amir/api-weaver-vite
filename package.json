@@ -8,7 +8,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "author": "Aka-Amir",
   "license": "MIT",
@@ -21,6 +22,7 @@
     }
   },
   "dependencies": {
-    "@api-weaver/core": "^0.0.1"
+    "@api-weaver/core": "^0.0.12",
+    "vite": "^4.2.0"
   }
 }

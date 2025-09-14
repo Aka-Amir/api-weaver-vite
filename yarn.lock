@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@api-weaver/core@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@api-weaver/core/-/core-0.0.1.tgz#103ca4e41e9a1e26cca65340c9d129f41039a200"
-  integrity sha512-IpuQVmGvZdiGD+xTH8ZgIu8+6lVFxDRDeyjjU4dekeh4kGbvGqvllVlLMzsZ5EdC9fsfQW9g7aD8v70VbQakTw==
+"@api-weaver/core@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@api-weaver/core/-/core-0.0.12.tgz#f8fbc52748bd8d2b017be7969b49408e35a2c40b"
+  integrity sha512-wrcN3+irQLXb/qIMZ44gv/Dy1RlRPjX4rDR2dVlOvakhUZf2kgylFTj4L+ysL3ufsY0n5cd3DryPR0iLMNUdjg==
   dependencies:
     "@types/node" "^24.3.3"
     prettier "^3.6.2"
