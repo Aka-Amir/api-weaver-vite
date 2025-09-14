@@ -1,10 +1,5 @@
-import type { Plugin } from "vite";
-export type ApiWeaverPluginOptions = {
-    outputDir: string;
-} & ({
-    url: string;
-} | {
-    path: string;
-});
-export declare function apiWeaverPlugin(options: ApiWeaverPluginOptions): Plugin;
+import { Plugin } from "vite";
+import { ApiWeaverAsyncConfigType, ApiWeaverStaticConfigType } from "@api-weaver/core";
+export default function apiWeaverPlugin(options: Omit<ApiWeaverAsyncConfigType, "logger">): Plugin;
+export default function apiWeaverPlugin(options: Omit<ApiWeaverStaticConfigType, "logger">): Plugin;
 //# sourceMappingURL=index.d.ts.map
